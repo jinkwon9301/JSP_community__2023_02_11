@@ -1,3 +1,5 @@
+package com.sbs.exam;
+
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
@@ -20,7 +22,7 @@ public class Rq {
     resp.setContentType("text/html;charset=UTF-8");
   }
 
-  public int getIntParam(String paramName, int defaultValue) {
+  public int getIntParam (String paramName, int defaultValue) {
     String value = req.getParameter(paramName);
 
     if (value == null) {
